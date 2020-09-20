@@ -6,6 +6,14 @@ ul {
   margin: 0 auto;
   padding: 0;
 }
+.container .weather-app-wrapper .weather-app h1 {
+  font-weight: normal;
+}
+
+.container {
+  font-family: monospace;
+  font-size: 16px;
+}
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
@@ -17,12 +25,23 @@ ul {
   padding: 15px;
 }
 .city-country {
-  font-size: 18px;
   font-weight: bold;
   margin-bottom: 0;
 }
 .weather-app .units {
   position: relative;
   font-size: 12px;
-  top: -15px;
+  top: -6px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.temp {
+  font-size: 16px;
+  margin-right: 0;
+}
+.weather-type {
+  font-size: 16px;
+}
+.img-text {
+  text-align: center;
 }

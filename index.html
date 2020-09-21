@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="src/style.css" />
     <link
@@ -22,22 +23,22 @@
           </h1>
           <div class="row">
             <div class="col-6">
-              <p class="city-country">Berlin, Germany</p>
+              <p id="city-country">Berlin, Germany</p>
               <span class="date-month">18 September,</span>
               <span class="time">18:30</span>
             </div>
             <div class="col-6">
               <ul>
-                <li>Chance of Rain: 10%</li>
-                <li>Air Quality: Good</li>
-                <li>Feels Like: 19°C</li>
+                <li>Maximum Temperature: <span id="max-temp"> 10% </span></li>
+                <li>Minimum Temperature: <span id="min-temp">Good</span></li>
+                <li>Feels Like: <span id="feels-like"> 19°C </span></li>
               </ul>
             </div>
           </div>
           <h2>
             <img src="img wather.webp" alt="emoji" width="200px" />
             <br />
-            <span class="temp">18</span>
+            <span id="temp">18</span>
             <span class="units">
               <a href="#" class="celcius"> °C </a>
               |
@@ -45,7 +46,7 @@
 
               <br />
             </span>
-            <span class="weather-type"> Partly Cloudly </span>
+            <span id="description"> Partly Cloudly </span>
           </h2>
         </div>
         <p>

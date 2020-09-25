@@ -17,61 +17,56 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-<h1>
-  Weather forecast
-  </h1>
+          <h1>Weather forecast</h1>
 
-    <form id = "search-form">
-      <div class = "row">
-        <div class = "col">
+          <form id="search-form">
+            <div class="row">
+              <div class="col">
+                <input type="text" placeholder="Enter City" id="city" />
+              </div>
+              <div class="col">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
 
-        <input type="text"  placeholder="Enter City" id ="city">
-</div>
-<div class = "col">
-      <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-      </div>
-    </form>
-          
-           
+          <hr />
 
-            <hr />
-          
           <div class="row">
             <div class="col-6">
-              <p id="city-country">Berlin, Germany</p>
-              <span id="date-month"> 18 September, 18:30</span>
+              <p id="city-country">City Name</p>
+              <span id="date-month"> Date and Time</span>
             </div>
             <div class="col-6">
               <ul>
-                <li>Maximum Temperature: <span id="max-temp"> 10% </span></li>
-                <li>Minimum Temperature: <span id="min-temp">Good</span></li>
-                <li>Feels Like: <span id="feels-like"> 19°C </span></li>
+                <li>Maximum Temperature: <span id="max-temp"> 0°C </span></li>
+                <li>Minimum Temperature: <span id="min-temp">O°C</span></li>
+                <li>Feels Like: <span id="feels-like"> 0°C </span></li>
               </ul>
             </div>
           </div>
           <h2>
             <img src="img wather.webp" alt="emoji" width="200px" />
             <br />
-            <img src=".." id="icon" width="30px" /><span id="temp">18</span
+            <img src=".." id="icon" width="30px" /><span id="temp"
+              >Current Temperature</span
             ><span class="units"
-              ><a href="#" class="celcius"> °C </a>
+              ><a href="#" id="celcius" class="active"> °C </a>
               |
-              <a href="#" class="fahrenheit"> °F </a>
+              <a href="#" id="fahrenheit"> °F </a>
 
               <br />
             </span>
-            <span id="description"> Partly Cloudly </span>
+            <span id="description"> Weather Type </span>
           </h2>
-          </div>
         </div>
-        <p>
-          <a href="https://sad-babbage-b8d06f.netlify.app" target="_blank">
-            Open-source code
-          </a>
-          by Pratibha Tomar
-        </p>
       </div>
+      <p>
+        <a href="https://sad-babbage-b8d06f.netlify.app" target="_blank">
+          Open-source code
+        </a>
+        by Pratibha Tomar
+      </p>
     </div>
   </body>
   <script src="src/index.js"></script>

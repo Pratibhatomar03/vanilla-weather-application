@@ -26,6 +26,7 @@ function formatHours(timestamp) {
   return `${hours}:${minutes}`;
 }
 function displayTemperature(response) {
+  console.log(response);
   let cityElement = document.querySelector("#city-country");
   let tempElement = document.querySelector("#temp");
   let descriptionElement = document.querySelector("#description");

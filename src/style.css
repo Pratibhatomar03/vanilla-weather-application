@@ -1,6 +1,14 @@
 h2 {
   text-align: center;
 }
+h2 .active {
+  color: black;
+  cursor: default;
+}
+h2 .active:hover {
+  text-decoration: none;
+  color: black;
+}
 ul {
   list-style: none;
   margin: 0 auto;
@@ -12,24 +20,27 @@ ul {
 
 .container {
   font-family: monospace;
-  font-size: 16px;
-
-  text-align: center;
+  font-size: 18px;
 }
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+  font-size: 18px;
 }
 .weather-app {
-  border: 1px solid black;
-  border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 20px;
   margin-top: 30px;
   padding: 15px;
+  background-image: linear-gradient(
+    to top,
+    #a7a6cb 0%,
+    #8989ba 52%,
+    #8989ba 100%
+  );
 }
-#city-country {
-  font-weight: bold;
-  margin-bottom: 0;
-}
+
 .weather-app .units {
   position: relative;
   font-size: 12px;
@@ -37,20 +48,33 @@ ul {
   margin-left: 0;
   margin-right: 0;
 }
+.img-text {
+  text-align: center;
+}
+#city-country {
+  font-weight: bold;
+  margin-bottom: 0;
+}
 #temp {
-  font-size: 16px;
+  font-weight: bolder;
+  font-size: 20px;
 }
 #description {
   font-size: 18px;
 }
-.img-text {
-  text-align: center;
+
+#city {
+  border-radius: 3px;
+  padding: 8px;
+  border: 1px solid white;
 }
-h2 .active {
-  color: black;
-  cursor: default;
+#submit {
+  border: 1px solid white;
+  background-color: rgb(136, 137, 187);
+  padding: 8px;
 }
-h2 .active:hover {
-  text-decoration: none;
-  color: black;
+
+#submit:hover {
+  background-color: white;
+  color: rgb(136, 137, 187);
 }

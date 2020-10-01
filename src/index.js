@@ -111,4 +111,4 @@ fahrenheitElement.addEventListener("click", displayFahrenheit);
 let celciusElement = document.querySelector("#celcius");
 celciusElement.addEventListener("click", displayCelcius);
 
-search("Name");
+search("Berlin");
